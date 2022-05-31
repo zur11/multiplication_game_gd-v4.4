@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes_and_scripts/gl_obj__circular_progress_bar/circular_progress_bar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes_and_scripts/screen__practice_game/circular_count_down/circular_count_down.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+margin_right = 54.0
+margin_bottom = 54.0
+script = ExtResource( 2 )
+
+[node name="CircularProgressBar" parent="." instance=ExtResource( 1 )]
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

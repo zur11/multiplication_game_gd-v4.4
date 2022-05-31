@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/error.mp3-97c3d720603f0590413d63b3e7b58cca.mp3str"
+
+[deps]
+
+source_file="res://scenes_and_scripts/screen__practice_game/soundEffects/error.mp3"
+dest_files=[ "res://.import/error.mp3-97c3d720603f0590413d63b3e7b58cca.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

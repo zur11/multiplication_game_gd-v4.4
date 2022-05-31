@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/correct.mp3-65a130f3421e7403ea449b6de45d638e.mp3str"
+
+[deps]
+
+source_file="res://scenes_and_scripts/screen__practice_game/soundEffects/correct.mp3"
+dest_files=[ "res://.import/correct.mp3-65a130f3421e7403ea449b6de45d638e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

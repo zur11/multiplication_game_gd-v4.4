@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=2 format=2]
+
+[ext_resource path="res://assets/themes/fonts/default_dynamicfont_bluetheme.tres" type="DynamicFont" id=1]
+
+[resource]
+default_font = ExtResource( 1 )
+Button/colors/font_color = Color( 0.0196078, 0.690196, 0.882353, 1 )
+Button/colors/font_color_focus = Color( 0.0196078, 0.690196, 0.882353, 1 )
+Button/colors/font_color_hover = Color( 0.0196078, 0.690196, 0.882353, 1 )
+Button/colors/font_color_pressed = Color( 0.0235294, 0.47451, 0.760784, 1 )
+Button/fonts/font = null
+Label/colors/font_color = Color( 0.0196078, 0.690196, 0.882353, 1 )
+ProgressBar/colors/font_color = Color( 0.0196078, 0.690196, 0.882353, 1 )

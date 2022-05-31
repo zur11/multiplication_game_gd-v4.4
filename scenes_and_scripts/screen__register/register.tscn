@@ -1,0 +1,129 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/themes/blue_theme.tres" type="Theme" id=1]
+[ext_resource path="res://scenes_and_scripts/screen__register/register.gd" type="Script" id=2]
+[ext_resource path="res://scenes_and_scripts/gl_obj__go_to_main_menu_btn/back_to_menu_button.tscn" type="PackedScene" id=3]
+
+[node name="Register" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_left = 19.0
+margin_top = 122.0
+margin_right = 340.0
+margin_bottom = 518.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_right = 321.0
+margin_bottom = 396.0
+theme = ExtResource( 1 )
+custom_constants/separation = 80
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_right = 321.0
+margin_bottom = 286.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer"]
+margin_right = 321.0
+margin_bottom = 286.0
+custom_constants/separation = 20
+
+[node name="UserNameHContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_right = 321.0
+margin_bottom = 34.0
+
+[node name="UserNameLabel" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/UserNameHContainer"]
+margin_top = 5.0
+margin_right = 98.0
+margin_bottom = 29.0
+text = "UserName"
+
+[node name="UserNameText" type="LineEdit" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/UserNameHContainer"]
+margin_left = 102.0
+margin_right = 321.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 200, 0 )
+size_flags_horizontal = 3
+placeholder_text = "Insert Your Name Here"
+placeholder_alpha = 0.388
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="PasswordHContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 321.0
+margin_bottom = 88.0
+
+[node name="PasswordLabel" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/PasswordHContainer"]
+margin_top = 5.0
+margin_right = 89.0
+margin_bottom = 29.0
+text = "PassWord"
+
+[node name="PasswordText" type="LineEdit" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/PasswordHContainer"]
+margin_left = 93.0
+margin_right = 321.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 200, 0 )
+size_flags_horizontal = 3
+placeholder_text = "Insert Your Password Here"
+placeholder_alpha = 0.388
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="ConfirmPasswordHContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 321.0
+margin_bottom = 142.0
+
+[node name="ConfirmPasswordLabel" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/ConfirmPasswordHContainer"]
+margin_top = 5.0
+margin_right = 117.0
+margin_bottom = 29.0
+text = "Confirm PW"
+
+[node name="ConfirmPasswordText" type="LineEdit" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/ConfirmPasswordHContainer"]
+margin_left = 121.0
+margin_right = 321.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 200, 0 )
+size_flags_horizontal = 3
+placeholder_text = "Insert Your Password Here"
+placeholder_alpha = 0.388
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="NotificationLabel" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 321.0
+margin_bottom = 186.0
+
+[node name="RegisterButton" type="Button" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 206.0
+margin_right = 321.0
+margin_bottom = 236.0
+text = "REGISTER"
+
+[node name="GoToLoginButton" type="Button" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 256.0
+margin_right = 321.0
+margin_bottom = 286.0
+text = "Go Back To Login"
+
+[node name="Button" parent="CenterContainer/VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 366.0
+margin_right = 321.0
+margin_bottom = 396.0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/RegisterButton" to="." method="_on_RegisterButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer/GoToLoginButton" to="." method="_on_GoToLoginButton_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]

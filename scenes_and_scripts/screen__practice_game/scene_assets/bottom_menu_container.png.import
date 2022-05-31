@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/bottom_menu_container.png-b3d4f5c35ad31ae52c5dbd9598b68b57.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://scenes_and_scripts/screen__practice_game/scene_assets/bottom_menu_container.png"
+dest_files=[ "res://.import/bottom_menu_container.png-b3d4f5c35ad31ae52c5dbd9598b68b57.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_zapsplat_action_break.mp3-285adf613c39bd151dcee4366c72cc6f.mp3str"
+
+[deps]
+
+source_file="res://assets/music/music_zapsplat_action_break.mp3"
+dest_files=[ "res://.import/music_zapsplat_action_break.mp3-285adf613c39bd151dcee4366c72cc6f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes_and_scripts/background__math_parallax/math_parallax_background.gd" type="Script" id=1]
+[ext_resource path="res://scenes_and_scripts/background__math_parallax/math_parallax_background.jpg" type="Texture" id=2]
+
+[node name="MathParallaxBackground" type="ParallaxBackground"]
+script = ExtResource( 1 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1000, 0 )
+
+[node name="Background-1" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 480, 326 )
+texture = ExtResource( 2 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1000, 0 )
+
+[node name="Background-1" type="Sprite" parent="ParallaxLayer2"]
+modulate = Color( 1, 1, 1, 0.243137 )
+position = Vector2( 480, 326 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )

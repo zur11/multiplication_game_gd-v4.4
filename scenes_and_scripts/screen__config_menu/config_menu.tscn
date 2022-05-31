@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes_and_scripts/screen__config_menu/background_select_button.gd" type="Script" id=1]
+[ext_resource path="res://scenes_and_scripts/gl_obj__go_to_main_menu_btn/back_to_menu_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/themes/blue_theme.tres" type="Theme" id=3]
+
+[node name="ConfigMenu" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+margin_right = 360.0
+margin_bottom = 640.0
+theme = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackgroundSelectLabel" type="Label" parent="Control"]
+margin_left = 49.0
+margin_top = 38.0
+margin_right = 105.0
+margin_bottom = 62.0
+text = "Fondo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BakcgroundSelectButton" type="OptionButton" parent="Control"]
+margin_left = 121.0
+margin_top = 37.0
+margin_right = 150.0
+margin_bottom = 67.0
+text = "Matrix Background"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" parent="Control" instance=ExtResource( 2 )]
+margin_left = 1.0
+margin_top = 536.0
+margin_right = 359.0
+margin_bottom = 566.0
+
+[connection signal="item_selected" from="Control/BakcgroundSelectButton" to="Control/BakcgroundSelectButton" method="_on_BakcgroundSelectButton_item_selected"]

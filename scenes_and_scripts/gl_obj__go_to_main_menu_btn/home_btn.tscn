@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes_and_scripts/screen__practice_game/scene_assets/to_home_btn.png" type="Texture" id=1]
+[ext_resource path="res://scenes_and_scripts/screen__practice_game/scene_assets/bottom_menu_container.png" type="Texture" id=2]
+
+[node name="TextureRect" type="TextureRect"]
+margin_right = 216.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 216, 60 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 136.0
+margin_bottom = 53.0
+rect_min_size = Vector2( 100, 32 )
+texture_normal = ExtResource( 1 )
+expand = true

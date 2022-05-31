@@ -1,0 +1,15 @@
+[gd_resource type="Environment" format=2]
+
+[resource]
+background_mode = 4
+background_canvas_max_layer = 1
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/3 = false
+glow_levels/5 = false
+glow_intensity = 0.69
+glow_strength = 1.51
+glow_blend_mode = 1
+glow_hdr_threshold = 0.01
+glow_hdr_scale = 0.31
+glow_bicubic_upscale = true

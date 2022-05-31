@@ -1,0 +1,8 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://assets/fonts/advanced_led_board_7/advanced_led_board-7.ttf" type="DynamicFontData" id=1]
+
+[resource]
+size = 28
+outline_color = Color( 0.196078, 0.788235, 0.164706, 1 )
+font_data = ExtResource( 1 )

@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/themes/circular_progress_bar_number.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes_and_scripts/screen__practice_game/circular_count_down/topmdpi.png" type="Texture" id=2]
+[ext_resource path="res://scenes_and_scripts/screen__practice_game/circular_count_down/inactivomdpi.png" type="Texture" id=3]
+[ext_resource path="res://scenes_and_scripts/gl_obj__circular_progress_bar/circular_progress_bar.gd" type="Script" id=4]
+[ext_resource path="res://assets/themes/newthemed.tres" type="Theme" id=5]
+[ext_resource path="res://scenes_and_scripts/screen__practice_game/circular_count_down/activomdpi.png" type="Texture" id=6]
+[ext_resource path="res://scenes_and_scripts/screen__practice_game/circular_count_down/WATCH-topmdpi.png" type="Texture" id=7]
+
+[node name="CenterContainer" type="Control"]
+margin_right = 70.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 70, 70 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 5 )
+script = ExtResource( 4 )
+value = 25
+
+[node name="BackgroundRect" type="TextureRect" parent="."]
+margin_right = 70.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 70, 70 )
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 58.0
+margin_bottom = 58.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 46, 46 )
+value = 90.0
+texture_under = ExtResource( 3 )
+texture_over = ExtResource( 2 )
+texture_progress = ExtResource( 6 )
+fill_mode = 4
+nine_patch_stretch = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 29.0
+margin_top = 24.0
+margin_right = 45.0
+margin_bottom = 52.0
+custom_colors/font_color = Color( 0.545098, 0.698039, 0.341176, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "5"
+align = 1
+valign = 1
